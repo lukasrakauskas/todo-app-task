@@ -24,8 +24,8 @@ Firestore structure should be updated with a `createdAt` timestamp field.
 Before starting development server, one should copy .env.example in both projects
 
 ```
-cp apps/frontend/.env.example cp apps/frontend/.env
-cp apps/backend/.env.example cp apps/backend/.env
+cp apps/frontend/.env.example apps/frontend/.env
+cp apps/backend/.env.example apps/backend/.env
 ```
 
 In the backend .env file you should point to your firebase credentials json file.
