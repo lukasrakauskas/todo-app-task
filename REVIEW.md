@@ -5,6 +5,7 @@
 - Props should not be passed to state. You can derive the required values in render function.
 - State and props should not be mutated directly when adding a task, use setState method.
 - Mix of functional and class based components, prefer to use functional style for all components.
+- Key prop is not added in lists
 
 ### Chores
 
