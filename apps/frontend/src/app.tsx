@@ -1,8 +1,12 @@
-import Tasks from "./tasks";
-import useTasks from "./use-tasks";
+import Tasks from "./components/tasks";
+import { QueryClient, QueryClientProvider } from "@tanstack/react-query";
+
+const queryClient = new QueryClient();
 
 export default function App() {
-  const { tasks, handleAdd, handleComplete } = useTasks();
-
-  return <Tasks tasks={tasks} onAdd={handleAdd} onComplete={handleComplete} />;
+  return (
+    <QueryClientProvider client={queryClient}>
+      <Tasks />
+    </QueryClientProvider>
+  );
 }
