@@ -23,7 +23,10 @@ export default function TaskForm() {
 
   const handleSubmit = (event: React.FormEvent<HTMLFormElement>) => {
     event.preventDefault();
-    addTask({ title });
+    
+    if (title.trim()) {
+      addTask({ title });
+    }
   };
 
   return (
